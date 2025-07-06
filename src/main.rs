@@ -1,5 +1,10 @@
 mod chunker;
 
+mod network;
+
+use std::env;
+
+
 use std::fs;
 
 fn main() {
@@ -12,11 +17,6 @@ fn main() {
         println!("{}", h);
     }
 }
-mod chunker;
-mod network;
-
-use std::env;
-use std::fs;
 
 fn main() {
     fs::create_dir_all("chunks").unwrap();
